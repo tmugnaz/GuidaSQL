@@ -1,1 +1,2 @@
 # APPUNTI SQL 
+iniziamo
