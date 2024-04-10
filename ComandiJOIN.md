@@ -97,3 +97,81 @@ Utilizziamo un INNER JOIN tra table1 e table2 sulla colonna1 per combinare le ri
 Successivamente, utilizziamo un LEFT JOIN tra il risultato del INNER JOIN precedente e table3 sulla colonna column2 per includere tutte le righe risultanti dal INNER JOIN e ottenere le corrispondenze da table3 se presenti.
 In questo caso la condizione LEFT indica la INNER JOIN precedente e quindi le righe risultanti provenienti da quelle tabelle saranno nulle (null) se non è confermata la clausola ON.
 
+---
+
+## FULL E CROSS JOIN
+
+ **FULL JOIN (o FULL OUTER JOIN)**:
+
+Il **FULL JOIN** è un tipo di join che combina tutte le righe da entrambe le tabelle coinvolte, inclusi i risultati non corrispondenti da entrambe le tabelle. Ciò significa che tutte le righe dalla tabella di sinistra (prima nella clausola FULL JOIN) e dalla tabella di destra (seconda nella clausola FULL JOIN) verranno incluse nel risultato, anche se non ci sono corrispondenze tra di loro.
+
+```sql
+SELECT e.*, d.department_name
+FROM employees e
+FULL JOIN departments d ON e.department_id = d.department_id;
+```
+
+In questo esempio, il FULL JOIN restituirà tutte le colonne da employees e departments, inclusi i casi in cui non c'è corrispondenza tra department_id nelle due tabelle. Le righe che non hanno corrispondenze avranno valori NULL per le colonne della tabella opposta.
+
+**CROSS JOIN:**
+
+Il CROSS JOIN è un tipo di join che produce il prodotto cartesiano di due tabelle, ossia tutte le possibili combinazioni di righe tra le due tabelle, senza alcuna condizione di join specifica.
+
+```sql
+Copy code
+SELECT e.*, d.department_name
+FROM employees e
+CROSS JOIN departments d;
+```
+
+il CROSS JOIN combina ogni riga della tabella employees con ogni riga della tabella departments, producendo un insieme di risultati in cui ogni impiegato è abbinato a ogni dipartimento. Il numero totale di righe nel risultato sarà il prodotto del numero di righe nelle due tabelle.
+
+---
+
+### UNION MINUS E INTERSECT
+
+* **UNION**: Utilizzato per combinare i risultati di due query in un singolo insieme di risultati, eliminando duplicati.
+
+```sql
+SELECT column1, column2
+FROM table1
+UNION
+SELECT column1, column2
+FROM table2;
+```
+
+In questo esempio, UNION combina i risultati delle query selezionando le colonne 1 e 2 da table1 e table2, eliminando eventuali righe duplicate.
+
+* **MINUS** (o EXCEPT in alcuni database): Utilizzato per ottenere le righe presenti nella prima query ma non nella seconda query.
+
+```sql
+SELECT column1, column2
+FROM table1
+MINUS
+SELECT column1, column2
+FROM table2;
+```
+
+In questo esempio, MINUS restituisce le righe selezionate dalla prima query (table1) che non sono presenti nella seconda query (table2), basandosi sulle colonne specificate.
+
+* **INTERSECT**: Utilizzato per ottenere le righe presenti sia nella prima query che nella seconda query.
+
+```sql
+SELECT column1, column2
+FROM table1
+INTERSECT
+SELECT column1, column2
+FROM table2;
+```
+
+In questo esempio, INTERSECT restituisce le righe selezionate che sono comuni sia alla prima query (table1) che alla seconda query (table2), basandosi sulle colonne specificate.
+
+Questi sono esempi di come UNION, MINUS (o EXCEPT) e INTERSECT possono essere utilizzati per combinare o confrontare i risultati di query diverse in SQL, consentendo di manipolare insiemi di dati in modi utili per l'analisi o la generazione di report.
+
+---
+---
+
+
+
+
+
