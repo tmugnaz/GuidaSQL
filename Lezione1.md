@@ -1,1 +1,0 @@
-# APPUNTI SQL 
