@@ -239,7 +239,27 @@ e tabella Department
  in questa ultima forma possiamo notare che Sì il numero di tabelle è aumentato ma che ogni valore non chiave (i non ID) dipende solo da un valore chiave .
  
  ---
- ---
+ ## SCHEMA ERD
+
+Alla fine del processio di analisi delle entità di un db possiamo mettere in pratica tutte le modifiche che abbiamo fattoe e creare un ERD :
+un diagramma Entity-Relationship (ERD) è uno strumento visuale utilizzato per rappresentare la struttura logica dei dati in un database. Questo tipo di diagramma mostra le entità (tabelle) nel database, insieme alle relazioni tra di esse. L'ERD aiuta a comprendere le associazioni tra le entità e a visualizzare la struttura dei dati in modo intuitivo.
+
+**Componenti dell'ERD**:
+* Entità: Tabelle con attributi 
+
+* Attributi: Sono le proprietà o le caratteristiche di un'entità. Gli attributi sono rappresentati come colonne nelle tabelle del database.
+
+* Relazioni: Definiscono le associazioni tra le entità e indicano come le entità sono correlate tra loro.
+
+![alt text](image-2.png)
+
+In questo grafico possiamo vedere anche le relazioni (1-N) tra le entità del DB oltre a vedere direttamente le Primary Key e le Foreign Key .
+
+Attraverso l'ERD possiamo anche andare a creare tutto il nostro database grazie alla UI del nostro programma, un modo semplice per visualizzare collegamenti complessi nel CREATE TABLE.
+
+---
+---
+
  # **"The key, the whole key, and nothing but the key, so help me Codd."**
 
 
