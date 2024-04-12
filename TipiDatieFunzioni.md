@@ -132,7 +132,7 @@ COALESCE(column,0)
 ### GROUPING 
 
 Viene usato insieme al CASE WHEN THEN END 
-è spesso utilizzato quando abbiamo a che fare con l'operatore **ROLLUP** e permette di cambiare i valori nulli risultati dal group by con quello che vogliamo per "pienare" quel campo.
+è spesso utilizzato quando abbiamo a che fare con l'operatore **ROLLUP** e permette di cambiare i valori nulli risultati dal GROUP BY ROLLUP con quello che vogliamo per "pienare" quel campo.
 
 ```sql
 CASE GROUPING (column) =1 THEN 'Valore Totale' ELSE etc etc 
