@@ -254,7 +254,7 @@ un diagramma Entity-Relationship (ERD) è uno strumento visuale utilizzato per r
 
 * Relazioni: Definiscono le associazioni tra le entità e indicano come le entità sono correlate tra loro.
 
-![alt text](image-2.png)
+![alt text](CapitoliSIngoli/image-2.png)
 
 In questo grafico possiamo vedere anche le relazioni (1-N) tra le entità del DB oltre a vedere direttamente le Primary Key e le Foreign Key .
 
@@ -499,7 +499,7 @@ FETCH FIRST 10 ROWS ONLY;
 ---
 ---
 
-![alt text](image.png)
+![alt text](CapitoliSIngoli/image.png)
 
 Le Join sono glis trumenti che permettono di lavorare con i dati condivisi tra due o più tabelle sfruttando le caratteristiche del DB per estrapolarne infomazioni
 
