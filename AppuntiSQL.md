@@ -10,9 +10,9 @@
 Questa è la guida del [Corso di SQL](https://www.udemy.com/course/impariamo-sql-con-oracle-e-sqlserver/).
 Gli argomenti della guida non sono in ordine con le lezioni del corso e trattano solo la parte SQL DEVELOPER inveche che i 3 diversi linguaggi a cui fa riferimento nelle lezioni poichè le differenze sono minime.
 Spero che questa guida possa aiutare il vostro percorso.  
-Buono Studio.  [^1]
+Buono Studio
 
-[^1]: Se Trovate errori non fatevi problemi a contattarmi o mandare un messaggio in modo da rendere questa guida il più corretta possibile
+
 
   - [INTRODUZIONE](#introduzione)
   - [CREAZIONE DB](#creazione-db)
@@ -1240,7 +1240,7 @@ torniamo piu o meno alla situazione di partenza :
 
 ---
 ---
-
+Se Trovate errori non fatevi problemi a contattarmi o mandare un messaggio in modo da rendere questa guida il più corretta possibile
 
 
 
