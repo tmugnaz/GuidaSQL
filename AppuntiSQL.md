@@ -1,6 +1,73 @@
-# SQL
+
+
+[![immagineTitolo](CapitoliSingoli/immagineTitolo.png)](https://www.udemy.com/course/impariamo-sql-con-oracle-e-sqlserver/)
+
+
 ---
 ---
+## INTRODUZIONE
+---
+Questa è la guida del [Corso di SQL](https://www.udemy.com/course/impariamo-sql-con-oracle-e-sqlserver/).
+Gli argomenti della guida non sono in ordine con le lezioni del corso e trattano solo la parte SQL DEVELOPER inveche che i 3 diversi linguaggi a cui fa riferimento nelle lezioni poichè le differenze sono minime.
+Spero che questa guida possa aiutare il vostro percorso.  
+Buono Studio.  [^1]
+
+[^1]: Se Trovate errori non fatevi problemi a contattarmi o mandare un messaggio in modo da rendere questa guida il più corretta possibile
+
+  - [INTRODUZIONE](#introduzione)
+  - [CREAZIONE DB](#creazione-db)
+    - [PRINCIPI DI CREAZIONE DB](#principi-di-creazione-db)
+    - [CREATE DATABASE](#create-database)
+    - [Analisi delle Entità](#analisi-delle-entità)
+    - [INDEX E SEQUENZE  NELLE TABELLE](#index-e-sequenze--nelle-tabelle)
+    - [RELAZIONI TRA ENTITÀ](#relazioni-tra-entità)
+    - [NORMALIZZAZIONE TRA TABELLE](#normalizzazione-tra-tabelle)
+ 
+    - [SCHEMA ERD](#schema-erd)
+  - [INSERIMENTO, MODIFICA E ELIMINAZIONE DATI](#inserimento-modifica-e-eliminazione-dati)
+    - [Clonazione tabelle](#clonazione-tabelle)
+    - [INSERT](#insert)
+    - [UPDATE](#update)
+    - [DELETE](#delete)
+  - [COMANDI BASE SQL](#comandi-base-sql)
+    - [*SELECT* E *FROM*](#select-e-from)
+    - [WHERE](#where)
+    - [ALIAS](#alias)
+    - [ORDER BY](#order-by)
+    - [FETCH FIRST ROWS](#fetch-first-rows)
+  - [JOIN](#join)
+    - [INNER JOIN](#inner-join)
+    - [LEFT/RIGHT OUTER JOIN](#leftright-outer-join)
+    - [FULL E CROSS JOIN](#full-e-cross-join)
+    - [UNION MINUS E INTERSECT](#union-minus-e-intersect)
+  - [SUBQUERY](#subquery)
+    - [SUBQUERY semplici](#subquery-semplici)
+    - [Parametro ALL e ANY](#parametro-all-e-any)
+    - [SUBQUERY come Sostituti di Tabelle](#subquery-come-sostituti-di-tabelle)
+    - [CTE (Common TAble Expression)](#cte-common-table-expression)
+  - [FUNZIONI DI AGGREGAZIONE](#funzioni-di-aggregazione)
+    - [GROUP BY](#group-by)
+    - [HAVING](#having)
+    - [ROLLUP e CUBE](#rollup-e-cube)
+      - [ROLLUP](#rollup)
+      - [CUBE](#cube)
+  - [TIPI DI DATI](#tipi-di-dati)
+  
+  - [FUNZIONI](#funzioni)
+    - [FUNZIONI DI CONVERSIONE](#funzioni-di-conversione)
+    - [FUNZIONI DI MANIPOLAZIONE STRINGHE](#funzioni-di-manipolazione-stringhe)
+    - [FUNZIONI MANIPOLAZIONE DEI NUMERI](#funzioni-manipolazione-dei-numeri)
+    - [FUNZIONI MANIPOLAZIONE DATA E ORA](#funzioni-manipolazione-data-e-ora)
+    - [FUNZIONI CASE NVL E NVL2](#funzioni-case-nvl-e-nvl2)
+    - [FUNZIONE COALESCE](#funzione-coalesce)
+    - [GROUPING](#grouping)
+  - [FUNZIONI ANALITICHE](#funzioni-analitiche)
+    - [FUNZIONI ANALITICHE](#funzioni-analitiche-1)
+    - [PIVOT E UNPIVOT](#pivot-e-unpivot)
+- [**"The key, the whole key, and nothing but the key, so help me Codd."**](#the-key-the-whole-key-and-nothing-but-the-key-so-help-me-codd)
+
+
+
 ## CREAZIONE DB 
 
 ---
@@ -262,7 +329,7 @@ Attraverso l'ERD possiamo anche andare a creare tutto il nostro database grazie 
 
 ---
 ---
-## INSERIMENTO, MODIFICA E ELIMINAZIONE DATI
+## INSERIMENTO, MODIFICA E ELIMINAZIONE DATI 
 ---
 ---
 ### Clonazione tabelle
@@ -988,7 +1055,7 @@ possiamo quindi notare i totali riportati che sono
 | `RPAD(string, length, pad_string)`| Aggiunge caratteri di riempimento alla destra di una stringa fino a raggiungere una determinata lunghezza |
 
 
-### FUNZIONE MANIPOLAZIONE DEI NUMERI
+### FUNZIONI MANIPOLAZIONE DEI NUMERI
 
 | Funzione                    | Descrizione                                                            |
 |-----------------------------|------------------------------------------------------------------------|
@@ -1080,7 +1147,7 @@ ___
 ---
 ---
 
-### Funzioni Analitiche 
+### FUNZIONI ANALITICHE
 
 Le funzioni analitiche in SQL sono un insieme di funzioni avanzate che consentono di eseguire calcoli complessi su dati raggruppati senza dover utilizzare sottoquery o operazioni di join complesse. 
 
